@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView x:Class="Tests.AndroidApp.Controls.CameraController"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Tests.AndroidApp.Controls">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <control:Joystick x:Name="Joystick"
+                          Grid.Column="0"
+                          WidthRequest="140"
+                          HeightRequest="140"
+                          HorizontalOptions="Start"
+                          VerticalOptions="End"
+                          Margin="80,0,0,40" />
+
+        <Border x:Name="TouchArea"
+                StrokeThickness="0"
+                Grid.Column="1">
+            <Border.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="TouchArea_PanUpdated" />
+            </Border.GestureRecognizers>
+        </Border>
+    </Grid>
+</ContentView>

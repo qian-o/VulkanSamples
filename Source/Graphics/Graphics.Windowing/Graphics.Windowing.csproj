@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<PackageReference Include="Silk.NET.SDL" />
+		<PackageReference Include="System.Text.Json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Graphics.Core\Graphics.Core.csproj" />
+	</ItemGroup>
+</Project>

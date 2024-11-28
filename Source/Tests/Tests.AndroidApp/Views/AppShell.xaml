@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell x:Class="Tests.AndroidApp.Views.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Tests.AndroidApp.Views"
+       xmlns:sample="clr-namespace:Tests.AndroidApp.Samples"
+       xmlns:vm="clr-namespace:Tests.AndroidApp.ViewModels"
+       x:DataType="vm:AppShellViewModel"
+       Shell.FlyoutBehavior="Flyout"
+       Shell.NavBarIsVisible="False">
+    <Shell.Resources>
+        <sample:GLTFScene x:Key="GLTFScene" />
+        <sample:RayQuery x:Key="RayQuery" />
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100">
+            <Image Margin="10"
+                   Source="vulkan_logo.svg" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <ShellContent Title="Home"
+                  ContentTemplate="{DataTemplate local:MainPage}"
+                  Route="MainPage" />
+
+    <ShellContent Title="GLTF Scene"
+                  Route="GLTFScenePage">
+        <ShellContent.Content>
+            <local:SamplePage Sample="{StaticResource GLTFScene}" />
+        </ShellContent.Content>
+    </ShellContent>
+
+    <ShellContent Title="Ray Query"
+                  Route="RayQueryPage"
+                  IsVisible="{Binding RayQuerySupported}">
+        <ShellContent.Content>
+            <local:SamplePage Sample="{StaticResource RayQuery}" />
+        </ShellContent.Content>
+    </ShellContent>
+
+</Shell>

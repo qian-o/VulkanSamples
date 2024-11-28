@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<PackageReference Include="OxyPlot.SkiaSharp" />
+		<PackageReference Include="SharpGLTF.Core" />
+		<PackageReference Include="SharpGLTF.Toolkit" />
+		<PackageReference Include="SkiaSharp.Skottie" />
+		<PackageReference Include="StbImageSharp" />
+		<PackageReference Include="System.Text.Json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Graphics\Graphics.Core\Graphics.Core.csproj" />
+		<ProjectReference Include="..\..\Graphics\Graphics.Vulkan\Graphics.Vulkan.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Assets\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+</Project>

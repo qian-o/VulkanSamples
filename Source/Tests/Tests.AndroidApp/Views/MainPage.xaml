@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control:ShellPage x:Class="Tests.AndroidApp.Views.MainPage"
+                   xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:control="clr-namespace:Tests.AndroidApp.Controls"
+                   xmlns:vm="clr-namespace:Tests.AndroidApp.ViewModels"
+                   x:DataType="vm:MainViewModel">
+
+    <Grid>
+        <Label HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="{Binding Title}" />
+
+        <StackLayout HorizontalOptions="End"
+                     VerticalOptions="End"
+                     Margin="0,0,15,15"
+                     Spacing="4">
+            <HorizontalStackLayout>
+                <Label WidthRequest="140"
+                       FontAttributes="Bold"
+                       Text="Device Name" />
+                <Label Text="{Binding DeviceName}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label WidthRequest="140"
+                       FontAttributes="Bold"
+                       Text="Api Version" />
+                <Label Text="{Binding ApiVersion}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label WidthRequest="140"
+                       FontAttributes="Bold"
+                       Text="Ray Query" />
+                <Label Text="{Binding RayQuerySupported}">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding RayQuerySupported}"
+                                     Value="True">
+                            <Setter Property="TextColor"
+                                    Value="{StaticResource Success}" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding RayQuerySupported}"
+                                     Value="False">
+                            <Setter Property="TextColor"
+                                    Value="{StaticResource Error}" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label WidthRequest="140"
+                       FontAttributes="Bold"
+                       Text="Ray Tracing" />
+                <Label Text="{Binding RayTracingSupported}">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding RayTracingSupported}"
+                                     Value="True">
+                            <Setter Property="TextColor"
+                                    Value="{StaticResource Success}" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding RayTracingSupported}"
+                                     Value="False">
+                            <Setter Property="TextColor"
+                                    Value="{StaticResource Error}" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </Grid>
+
+</control:ShellPage>

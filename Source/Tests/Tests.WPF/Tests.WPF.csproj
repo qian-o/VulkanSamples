@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Silk.NET.Direct3D11" />
+	  <PackageReference Include="Silk.NET.Direct3D9" />
+	  <PackageReference Include="Silk.NET.DXGI" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Assets\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Assets\Shaders\GammaCorrectionEffect.ps" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Assets\Shaders\GammaCorrectionEffect.ps" />
+	</ItemGroup>
+
+</Project>

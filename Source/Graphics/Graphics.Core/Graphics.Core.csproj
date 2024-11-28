@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<PackageReference Include="Hexa.NET.ImGui" />
+		<PackageReference Include="Hexa.NET.ImGuizmo" />
+		<PackageReference Include="Hexa.NET.ImNodes" />
+		<PackageReference Include="Hexa.NET.ImPlot" />
+		<PackageReference Include="Silk.NET.Maths" />
+		<PackageReference Include="SkiaSharp" />
+		<PackageReference Include="SkiaSharp.NativeAssets.Linux" />
+		<PackageReference Include="SkiaSharp.NativeAssets.macOS" />
+		<PackageReference Include="SkiaSharp.NativeAssets.Win32" />
+		<PackageReference Include="Vortice.Dxc" />
+	</ItemGroup>
+</Project>

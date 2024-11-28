@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net9.0-android35.0</TargetFrameworks>
+		<OutputType>Exe</OutputType>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ApplicationId>com.renderer.tests.androidapp</ApplicationId>
+		<ApplicationTitle>Tests.AndroidApp</ApplicationTitle>
+		<ApplicationVersion>1</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">30.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" />
+		<PackageReference Include="CommunityToolkit.Mvvm" />
+		<PackageReference Include="Microsoft.Maui.Controls" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" />
+		<PackageReference Include="SkiaSharp.Views.Maui.Controls" />
+		<PackageReference Include="System.Text.Json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiAsset Include="Assets\**" LogicalName="Assets\%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiAsset Include="..\Tests.Core\Assets\**" LogicalName="Assets\%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AndroidNativeLibrary Include="Platforms\Android\lib\arm64-v8a\libVkLayer_khronos_validation.so" />
+		<AndroidNativeLibrary Include="Platforms\Android\lib\armeabi-v7a\libVkLayer_khronos_validation.so" />
+		<AndroidNativeLibrary Include="Platforms\Android\lib\x86_64\libVkLayer_khronos_validation.so" />
+	</ItemGroup>
+
+	<Target Name="CompileShader" BeforeTargets="PreBuildEvent">
+		<Exec Command="call Scripts\CompileShader.bat" />
+	</Target>
+</Project>
