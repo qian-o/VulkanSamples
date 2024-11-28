@@ -251,7 +251,7 @@ public unsafe class Texture : VulkanObject<VkImage>, IBindableResource
                         else if (oldLayout == ImageLayout.General)
                         {
                             barrier.SrcAccessMask = AccessFlags.ShaderReadBit | AccessFlags.ShaderWriteBit;
-                            srcStageFlags = PipelineStageFlags.ComputeShaderBit | PipelineStageFlags.RayTracingShaderBitKhr;
+                            srcStageFlags = PipelineStageFlags.AllGraphicsBit;
                         }
                         else if (oldLayout == ImageLayout.ColorAttachmentOptimal)
                         {
@@ -301,7 +301,7 @@ public unsafe class Texture : VulkanObject<VkImage>, IBindableResource
                         else if (newLayout == ImageLayout.General)
                         {
                             barrier.DstAccessMask = AccessFlags.ShaderReadBit | AccessFlags.ShaderWriteBit;
-                            dstStageFlags = PipelineStageFlags.ComputeShaderBit | PipelineStageFlags.RayTracingShaderBitKhr;
+                            dstStageFlags = PipelineStageFlags.AllGraphicsBit;
                         }
                         else if (newLayout == ImageLayout.ColorAttachmentOptimal)
                         {
