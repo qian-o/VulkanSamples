@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Skia", "Source\Tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.WPF", "Source\Tests\Tests.WPF\Tests.WPF.csproj", "{7F266E29-B73C-4351-8F2E-DE19A659C653}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.AvaloniaApp", "Source\Tests\Tests.AvaloniaApp\Tests.AvaloniaApp.csproj", "{EC2677BF-8064-474A-AA30-DCE5F4718EEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{7F266E29-B73C-4351-8F2E-DE19A659C653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F266E29-B73C-4351-8F2E-DE19A659C653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F266E29-B73C-4351-8F2E-DE19A659C653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC2677BF-8064-474A-AA30-DCE5F4718EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2677BF-8064-474A-AA30-DCE5F4718EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2677BF-8064-474A-AA30-DCE5F4718EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2677BF-8064-474A-AA30-DCE5F4718EEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,5 +130,6 @@ Global
 		{C89DE0F2-A97F-4068-B626-AEA086A0890F} = {AD83ACD6-10A5-4CDC-8DC0-E34E7E8C5ADD}
 		{DACA4C31-438B-4FBB-A938-FC7570FE0849} = {AD83ACD6-10A5-4CDC-8DC0-E34E7E8C5ADD}
 		{7F266E29-B73C-4351-8F2E-DE19A659C653} = {AD83ACD6-10A5-4CDC-8DC0-E34E7E8C5ADD}
+		{EC2677BF-8064-474A-AA30-DCE5F4718EEB} = {AD83ACD6-10A5-4CDC-8DC0-E34E7E8C5ADD}
 	EndGlobalSection
 EndGlobal
