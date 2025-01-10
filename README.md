@@ -17,6 +17,9 @@ ImGui drawing, ray tracing, WPF integration, Android integration, etc.
 - For the `Android` project, you need to install `Android NDK` and `Android SDK`. The virtual machine does not support `Vulkan 1.3`, you need a real machine with Snapdragon 8 Gen2 or higher chip.
 
 ## Samples
+| Name | Description | Screenshot |
+| ---- | ----------- | ---------- |
+| AndroidApp | Using MAUI to create an Android application, including two Vulkan rendering interfaces. | ![image]() |
 
 ## ½è¼ø
 - [veldrid](https://github.com/veldrid/veldrid)
