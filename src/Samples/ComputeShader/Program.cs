@@ -7,7 +7,7 @@ using Vulkan.ImGui;
 using Windowing;
 using Windowing.Events;
 
-namespace Compute;
+namespace ComputeShader;
 
 internal sealed unsafe class Program
 {

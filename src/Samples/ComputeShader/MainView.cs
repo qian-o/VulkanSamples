@@ -12,7 +12,7 @@ using Vulkan.Helpers;
 using Vulkan.ImGui;
 using Windowing.Events;
 
-namespace Compute;
+namespace ComputeShader;
 
 internal sealed unsafe class MainView : View
 {

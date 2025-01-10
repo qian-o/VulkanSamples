@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windowing", "src\Windowing\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp", "src\Samples\AndroidApp\AndroidApp.csproj", "{E2DDABE0-10C4-4349-9CBF-874956D31B7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compute", "src\Samples\Compute\Compute.csproj", "{9026C8DE-19FF-4DAE-BFE4-411109CF9556}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputeShader", "src\Samples\ComputeShader\ComputeShader.csproj", "{9026C8DE-19FF-4DAE-BFE4-411109CF9556}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLTFAnimation", "src\Samples\GLTFAnimation\GLTFAnimation.csproj", "{73DFD247-2359-4535-AF76-026CB9B44724}"
 EndProject
