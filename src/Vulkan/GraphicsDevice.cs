@@ -306,6 +306,10 @@ public unsafe class GraphicsDevice : VulkanObject<VkDevice>
 
     internal override void DestroyObject()
     {
+        GraphicsExecutor.WaitIdle();
+        ComputeExecutor.WaitIdle();
+        TransferExecutor.WaitIdle();
+
         foreach (Fence fence in _availableStagingFences)
         {
             fence.Dispose();

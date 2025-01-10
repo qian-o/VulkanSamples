@@ -17,6 +17,11 @@ public unsafe class Executor : VulkanObject<VkQueue>
 
     internal uint FamilyIndex { get; }
 
+    internal void WaitIdle()
+    {
+        VkRes.Vk.QueueWaitIdle(Handle);
+    }
+
     internal override ulong[] GetHandles()
     {
         return [(ulong)Handle.Handle];
