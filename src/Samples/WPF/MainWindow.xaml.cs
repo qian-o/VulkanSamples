@@ -308,7 +308,7 @@ public unsafe partial class MainWindow : Window
     private Camera _camera;
     private Other _other;
     private int _pathTracerSampleIndex;
-    private int _pathTracerNumSamples = 256;
+    private readonly int _pathTracerNumSamples = 256;
 
     private int cameraHashCode;
     private int otherHashCode;

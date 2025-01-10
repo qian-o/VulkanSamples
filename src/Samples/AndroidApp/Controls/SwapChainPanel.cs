@@ -1,9 +1,8 @@
-﻿using Vulkan;
+﻿using Silk.NET.Core.Contexts;
+using Silk.NET.Maths;
+using Vulkan;
 using Vulkan.Descriptions;
 using Windowing.Events;
-using Silk.NET.Core.Contexts;
-using Silk.NET.Maths;
-using AndroidApp;
 
 namespace AndroidApp.Controls;
 

@@ -1,10 +1,10 @@
-﻿using Vulkan;
-using Vulkan.ImGui;
-using Windowing.Events;
-using Hexa.NET.ImGui;
+﻿using Hexa.NET.ImGui;
 using OxyPlot;
 using OxyPlot.SkiaSharp;
 using SkiaSharp;
+using Vulkan;
+using Vulkan.ImGui;
+using Windowing.Events;
 
 namespace Common;
 
@@ -168,9 +168,9 @@ public class PlotView : SkiaView, IPlotView
             _renderContext.PopClip();
 
             OxySize textSize = _renderContext.MeasureText(_plotData.TrackerHitResult.Text, ActualModel.DefaultFont, ActualModel.DefaultFontSize);
-            textSize = new OxySize(textSize.Width + TrackerTextPadding * 2, textSize.Height + TrackerTextPadding * 2);
+            textSize = new OxySize(textSize.Width + (TrackerTextPadding * 2), textSize.Height + (TrackerTextPadding * 2));
 
-            double x = Math.Min(Math.Max(0, _plotData.TrackerHitResult.Position.X - textSize.Width / 2), ActualWidth - textSize.Width);
+            double x = Math.Min(Math.Max(0, _plotData.TrackerHitResult.Position.X - (textSize.Width / 2)), ActualWidth - textSize.Width);
             double y = Math.Min(Math.Max(0, _plotData.TrackerHitResult.Position.Y - textSize.Height - 7), ActualHeight - textSize.Height);
 
             _renderContext.DrawRectangle(new OxyRect(x, y, textSize.Width, textSize.Height),

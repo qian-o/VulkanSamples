@@ -1,9 +1,8 @@
 ﻿using System.Numerics;
 using Core;
-using Core;
-using Windowing.Events;
 using Hexa.NET.ImGui;
 using Silk.NET.Maths;
+using Windowing.Events;
 
 namespace Common;
 

@@ -1,11 +1,11 @@
 ﻿using Core;
+using Hexa.NET.ImGui;
+using Silk.NET.Maths;
 using Vulkan;
 using Vulkan.Descriptions;
 using Vulkan.ImGui;
 using Windowing;
 using Windowing.Events;
-using Hexa.NET.ImGui;
-using Silk.NET.Maths;
 
 internal sealed unsafe class Program
 {

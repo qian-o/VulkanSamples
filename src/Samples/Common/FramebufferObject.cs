@@ -1,5 +1,4 @@
 ﻿using Core;
-using Core;
 using Vulkan;
 using Vulkan.Descriptions;
 

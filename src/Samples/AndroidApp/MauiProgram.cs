@@ -3,7 +3,6 @@ using AndroidApp.Handlers;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using SkiaSharp.Views.Maui.Controls.Hosting;
-using AndroidApp;
 
 namespace AndroidApp;
 
