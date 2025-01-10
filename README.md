@@ -60,3 +60,5 @@ ImGui drawing, ray tracing, WPF integration, Android integration, etc.
 ## Reference
 - [veldrid](https://github.com/veldrid/veldrid)
 - [Evergine](https://evergine.com)
+- [vulkan-interop-directx](https://github.com/malstraem/vulkan-interop-directx)
+- [VulkanExample](https://github.com/zvasya/VulkanExample)
