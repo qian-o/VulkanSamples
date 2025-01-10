@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
 using Hexa.NET.ImGui;
 
-namespace Tests.Core;
+namespace Common;
 
 public class ImGuiMouseButtonEventArgs(ImGuiMouseButton button, Vector2 position) : EventArgs
 {

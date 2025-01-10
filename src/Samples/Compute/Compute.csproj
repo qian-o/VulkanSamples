@@ -3,11 +3,14 @@
 		<OutputType>Exe</OutputType>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 	</PropertyGroup>
+
 	<ItemGroup>
-	  <PackageReference Include="System.Text.Json" />
+		<ProjectReference Include="..\Common\Common.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+		<None Include="Assets\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 </Project>

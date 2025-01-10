@@ -2,9 +2,9 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Tests.Core.Helpers;
+using Common.Helpers;
 
-namespace Tests.WPF;
+namespace WPF;
 
 public class CameraController(Control control)
 {

@@ -4,7 +4,7 @@ using SkiaSharp;
 using SkiaSharp.Views.Maui;
 using SkiaSharp.Views.Maui.Controls;
 
-namespace Tests.AndroidApp.Controls;
+namespace AndroidApp.Controls;
 
 public class Joystick : SKCanvasView
 {
@@ -34,7 +34,7 @@ public class Joystick : SKCanvasView
 
                 if (handle.X < 0)
                 {
-                    Radians = (MathF.PI * 2) - Radians;
+                    Radians = MathF.PI * 2 - Radians;
                 }
             }
 

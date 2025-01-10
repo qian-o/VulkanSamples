@@ -1,4 +1,4 @@
-﻿namespace Tests.SDFFontTexture.Models;
+﻿namespace SDFFontTexture.Models;
 
 internal sealed class Glyph
 {

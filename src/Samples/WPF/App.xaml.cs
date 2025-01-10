@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using Graphics.Vulkan;
+using Vulkan;
 
-namespace Tests.WPF;
+namespace WPF;
 
 public partial class App : Application
 {

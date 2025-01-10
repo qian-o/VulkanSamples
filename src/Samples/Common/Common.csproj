@@ -9,8 +9,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\Graphics\Graphics.Core\Graphics.Core.csproj" />
-		<ProjectReference Include="..\..\Graphics\Graphics.Vulkan\Graphics.Vulkan.csproj" />
+		<ProjectReference Include="..\..\Vulkan\Vulkan.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

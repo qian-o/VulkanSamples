@@ -1,14 +1,14 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.ImGui;
-using Graphics.Windowing;
-using Graphics.Windowing.Events;
+﻿using Common;
+using Core;
 using Hexa.NET.ImGui;
 using Silk.NET.Maths;
-using Tests.Core;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.ImGui;
+using Windowing;
+using Windowing.Events;
 
-namespace Tests.RayTracing;
+namespace RayTracing;
 
 internal sealed unsafe class Program
 {
@@ -24,7 +24,7 @@ internal sealed unsafe class Program
     {
         mainWindow = new()
         {
-            Title = "Tests.RayTracing",
+            Title = "RayTracing",
             MinimumSize = new(100, 100)
         };
 
@@ -93,7 +93,7 @@ internal sealed unsafe class Program
             view.Render(e);
         }
 
-        ImGui.Begin("Tests.RayTracing");
+        ImGui.Begin("RayTracing");
         {
             ImGui.Text($"FPS: {1.0f / e.DeltaTime}");
 

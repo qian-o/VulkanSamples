@@ -1,13 +1,13 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.ImGui;
-using Graphics.Windowing;
-using Graphics.Windowing.Events;
+﻿using Common;
+using Core;
 using Silk.NET.Maths;
-using Tests.Core;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.ImGui;
+using Windowing;
+using Windowing.Events;
 
-namespace Tests.SDFFontTexture;
+namespace SDFFontTexture;
 
 internal sealed unsafe class Program
 {
@@ -23,7 +23,7 @@ internal sealed unsafe class Program
     {
         mainWindow = new()
         {
-            Title = "Tests.SDFFontTexture",
+            Title = "SDFFontTexture",
             MinimumSize = new(100, 100)
         };
 

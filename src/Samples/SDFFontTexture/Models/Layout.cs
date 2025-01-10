@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Tests.SDFFontTexture.Models;
+namespace SDFFontTexture.Models;
 
 internal sealed class Layout(Atlas atlas, Metrics metrics, Glyph[] glyphs)
 {

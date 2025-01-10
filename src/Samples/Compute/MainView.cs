@@ -1,18 +1,18 @@
 ﻿using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Text;
-using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
-using Graphics.Vulkan.ImGui;
-using Graphics.Windowing.Events;
+using Common;
+using Common.Helpers;
+using Core;
 using Hexa.NET.ImGui;
 using Silk.NET.Maths;
-using Tests.Core;
-using Tests.Core.Helpers;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
+using Vulkan.ImGui;
+using Windowing.Events;
 
-namespace Tests.Compute;
+namespace Compute;
 
 internal sealed unsafe class MainView : View
 {

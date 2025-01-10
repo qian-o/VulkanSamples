@@ -1,4 +1,4 @@
-﻿namespace Tests.AndroidApp.Helpers;
+﻿namespace AndroidApp.Helpers;
 
 internal sealed class FileReader(string directoryPath)
 {

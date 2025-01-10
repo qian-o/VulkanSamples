@@ -1,24 +1,24 @@
 ﻿using System.Numerics;
 using System.Runtime.InteropServices;
-using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
-using Graphics.Vulkan.ImGui;
-using Graphics.Windowing.Events;
+using Common;
+using Common.Helpers;
+using Core;
 using Hexa.NET.ImGui;
 using SharpGLTF.Materials;
 using SharpGLTF.Schema2;
 using SharpGLTF.Validation;
 using Silk.NET.Maths;
 using StbImageSharp;
-using Tests.Core;
-using Tests.Core.Helpers;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
+using Vulkan.ImGui;
+using Windowing.Events;
 using AlphaMode = SharpGLTF.Schema2.AlphaMode;
 using GLTFTexture = SharpGLTF.Schema2.Texture;
-using Texture = Graphics.Vulkan.Texture;
+using Texture = Vulkan.Texture;
 
-namespace Tests.RayTracing;
+namespace RayTracing;
 
 internal sealed unsafe class MainView : View
 {

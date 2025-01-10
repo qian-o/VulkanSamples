@@ -1,7 +1,7 @@
-﻿using Graphics.Vulkan;
-using Tests.AndroidApp.Controls;
+﻿using Vulkan;
+using AndroidApp.Controls;
 
-namespace Tests.AndroidApp.Samples;
+namespace AndroidApp.Samples;
 
 public abstract class BaseSample : ISample
 {

@@ -1,6 +1,7 @@
 ﻿using System.Runtime.InteropServices;
+using AndroidApp.Platforms.Android.Helpers;
 
-namespace Tests.AndroidApp.Platforms.Android.Helpers;
+namespace AndroidApp.Platforms.Android.Helpers;
 
 internal static unsafe partial class NativeActivity
 {

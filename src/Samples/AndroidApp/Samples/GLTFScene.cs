@@ -1,22 +1,24 @@
 ﻿using System.Numerics;
 using System.Runtime.InteropServices;
-using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
+using Core;
+using Vulkan;
+using Vulkan.Descriptions;
 using SharpGLTF.Materials;
 using SharpGLTF.Memory;
 using SharpGLTF.Schema2;
 using StbImageSharp;
-using Tests.AndroidApp.Controls;
-using Tests.AndroidApp.Helpers;
-using Tests.Core.Helpers;
+using AndroidApp;
+using AndroidApp.Controls;
+using AndroidApp.Helpers;
+using Core.Helpers;
 using GLTFMaterial = SharpGLTF.Schema2.Material;
 using GLTFNode = SharpGLTF.Schema2.Node;
 using GLTFTexture = SharpGLTF.Schema2.Texture;
-using Texture = Graphics.Vulkan.Texture;
-using TextureView = Graphics.Vulkan.TextureView;
+using Texture = Vulkan.Texture;
+using TextureView = Vulkan.TextureView;
+using Common.Helpers;
 
-namespace Tests.AndroidApp.Samples;
+namespace AndroidApp.Samples;
 
 public class GLTFScene : BaseSample
 {

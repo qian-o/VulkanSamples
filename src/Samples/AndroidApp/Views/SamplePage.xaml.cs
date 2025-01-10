@@ -1,10 +1,10 @@
-using Graphics.Vulkan;
-using Graphics.Windowing.Events;
-using Tests.AndroidApp.Controls;
-using Tests.AndroidApp.Samples;
-using Tests.AndroidApp.ViewModels;
+using AndroidApp.Controls;
+using AndroidApp.Samples;
+using Vulkan;
+using Windowing.Events;
+using AndroidApp.ViewModels;
 
-namespace Tests.AndroidApp.Views;
+namespace AndroidApp.Views;
 
 public partial class SamplePage : ShellPage
 {

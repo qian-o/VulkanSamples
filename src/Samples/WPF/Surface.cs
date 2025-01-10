@@ -3,19 +3,19 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Interop;
 using System.Windows.Media;
-using Graphics.Vulkan;
-using Graphics.Windowing.Events;
 using Silk.NET.Core.Native;
 using Silk.NET.Direct3D11;
 using Silk.NET.Direct3D9;
 using Silk.NET.DXGI;
+using Vulkan;
+using Windowing.Events;
 using Format = Silk.NET.Direct3D9.Format;
-using PixelFormat = Graphics.Core.PixelFormat;
+using PixelFormat = Core.PixelFormat;
 using PresentParameters = Silk.NET.Direct3D9.PresentParameters;
 using Swapeffect = Silk.NET.Direct3D9.Swapeffect;
 using WRect = System.Windows.Rect;
 
-namespace Tests.WPF;
+namespace WPF;
 
 public unsafe class Surface : Control
 {

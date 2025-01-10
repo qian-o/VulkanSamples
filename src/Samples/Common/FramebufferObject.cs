@@ -1,8 +1,9 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
+﻿using Core;
+using Core;
+using Vulkan;
+using Vulkan.Descriptions;
 
-namespace Tests.Core;
+namespace Common;
 
 public class FramebufferObject : DisposableObject
 {

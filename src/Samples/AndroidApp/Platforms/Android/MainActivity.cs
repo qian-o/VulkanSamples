@@ -6,7 +6,7 @@ using AndroidX.Activity;
 using AndroidX.Core.View;
 
 #pragma warning disable IDE0130
-namespace Tests.AndroidApp;
+namespace AndroidApp;
 #pragma warning restore IDE0130
 
 [Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, ScreenOrientation = ScreenOrientation.UserLandscape, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]

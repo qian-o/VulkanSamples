@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Maui.Behaviors;
 
-namespace Tests.AndroidApp.Controls;
+namespace AndroidApp.Controls;
 
 public class MenuButton : ImageButton
 {

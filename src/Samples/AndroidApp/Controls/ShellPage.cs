@@ -1,6 +1,6 @@
-using Tests.AndroidApp.Views;
+using AndroidApp.Views;
 
-namespace Tests.AndroidApp.Controls;
+namespace AndroidApp.Controls;
 
 public abstract class ShellPage : ContentPage
 {

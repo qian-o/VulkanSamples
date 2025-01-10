@@ -2,7 +2,7 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Effects;
 
-namespace Tests.WPF;
+namespace WPF;
 
 public class GammaCorrectionEffect : ShaderEffect
 {
@@ -12,7 +12,7 @@ public class GammaCorrectionEffect : ShaderEffect
     {
         PixelShader pixelShader = new()
         {
-            UriSource = new Uri("/Tests.WPF;component/Assets/Shaders/GammaCorrectionEffect.ps", UriKind.Relative)
+            UriSource = new Uri("/WPF;component/Assets/Shaders/GammaCorrectionEffect.ps", UriKind.Relative)
         };
 
         PixelShader = pixelShader;

@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace Tests.AndroidApp.ViewModels;
+namespace AndroidApp.ViewModels;
 
 public partial class SampleViewModel : ObservableRecipient
 {

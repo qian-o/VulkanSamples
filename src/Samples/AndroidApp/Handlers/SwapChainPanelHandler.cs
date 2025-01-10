@@ -1,8 +1,8 @@
 ﻿using Microsoft.Maui.Handlers;
-using Tests.AndroidApp.Controls;
-using AndroidSwapChainPanel = Tests.AndroidApp.Platforms.Android.Controls.SwapChainPanel;
+using AndroidSwapChainPanel = AndroidApp.Platforms.Android.Controls.SwapChainPanel;
+using SwapChainPanel = AndroidApp.Controls.SwapChainPanel;
 
-namespace Tests.AndroidApp.Handlers;
+namespace AndroidApp.Handlers;
 
 internal sealed class SwapChainPanelHandler : ViewHandler<SwapChainPanel, AndroidSwapChainPanel>
 {

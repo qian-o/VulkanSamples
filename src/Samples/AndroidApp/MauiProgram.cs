@@ -1,10 +1,11 @@
-﻿using CommunityToolkit.Maui;
+﻿using AndroidApp.Controls;
+using AndroidApp.Handlers;
+using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using SkiaSharp.Views.Maui.Controls.Hosting;
-using Tests.AndroidApp.Controls;
-using Tests.AndroidApp.Handlers;
+using AndroidApp;
 
-namespace Tests.AndroidApp;
+namespace AndroidApp;
 
 public static class MauiProgram
 {

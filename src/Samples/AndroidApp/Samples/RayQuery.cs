@@ -1,19 +1,19 @@
 ﻿using System.Numerics;
 using System.Runtime.InteropServices;
-using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
+using AndroidApp.Helpers;
+using Common.Helpers;
+using Core;
 using SharpGLTF.Materials;
 using SharpGLTF.Schema2;
 using StbImageSharp;
-using Tests.AndroidApp.Helpers;
-using Tests.Core.Helpers;
+using Vulkan;
+using Vulkan.Descriptions;
 using AlphaMode = SharpGLTF.Schema2.AlphaMode;
-using CameraController = Tests.AndroidApp.Controls.CameraController;
+using CameraController = AndroidApp.Controls.CameraController;
 using GLTFTexture = SharpGLTF.Schema2.Texture;
-using Texture = Graphics.Vulkan.Texture;
+using Texture = Vulkan.Texture;
 
-namespace Tests.AndroidApp.Samples;
+namespace AndroidApp.Samples;
 
 public unsafe class RayQuery : BaseSample
 {

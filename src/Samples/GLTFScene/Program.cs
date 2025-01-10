@@ -1,9 +1,9 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
-using Graphics.Windowing;
-using Graphics.Windowing.Events;
+﻿using Core;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
+using Windowing;
+using Windowing.Events;
 using SharpGLTF.Materials;
 using SharpGLTF.Memory;
 using SharpGLTF.Schema2;
@@ -16,9 +16,9 @@ using System.Text;
 using GMaterial = SharpGLTF.Schema2.Material;
 using GNode = SharpGLTF.Schema2.Node;
 using GTexture = SharpGLTF.Schema2.Texture;
-using Texture = Graphics.Vulkan.Texture;
+using Texture = Vulkan.Texture;
 
-namespace Tests.GLTFScene;
+namespace GLTFScene;
 
 internal sealed unsafe class Program
 {
@@ -135,7 +135,7 @@ internal sealed unsafe class Program
     {
         mainWindow = new()
         {
-            Title = "Tests.GLTFScene",
+            Title = "GLTFScene",
             MinimumSize = new(100, 100)
         };
 

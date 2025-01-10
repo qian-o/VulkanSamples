@@ -1,10 +1,11 @@
 ﻿using System.Numerics;
-using Graphics.Core;
-using Graphics.Windowing.Events;
+using Core;
+using Core;
+using Windowing.Events;
 using Hexa.NET.ImGui;
 using Silk.NET.Maths;
 
-namespace Tests.Core;
+namespace Common;
 
 public abstract class View(string title) : DisposableObject
 {

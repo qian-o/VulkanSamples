@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Tests.AndroidApp.ViewModels;
+namespace AndroidApp.ViewModels;
 
 public partial class AppShellViewModel : ObservableRecipient
 {

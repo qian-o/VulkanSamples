@@ -1,7 +1,7 @@
 using System.Numerics;
-using Tests.Core.Helpers;
+using Common.Helpers;
 
-namespace Tests.AndroidApp.Controls;
+namespace AndroidApp.Controls;
 
 public partial class CameraController : ContentView
 {

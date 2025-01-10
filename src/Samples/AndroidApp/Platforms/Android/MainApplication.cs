@@ -1,8 +1,9 @@
 ﻿using Android.App;
 using Android.Runtime;
+using AndroidApp;
 
 #pragma warning disable IDE0130
-namespace Tests.AndroidApp;
+namespace AndroidApp;
 #pragma warning restore IDE0130
 
 [Application]

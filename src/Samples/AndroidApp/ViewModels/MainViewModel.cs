@@ -1,11 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Tests.AndroidApp.ViewModels;
+namespace AndroidApp.ViewModels;
 
 public partial class MainViewModel : ObservableRecipient
 {
     [ObservableProperty]
-    private string title = "Tests.AndroidApp";
+    private string title = "AndroidApp";
 
     [ObservableProperty]
     private string deviceName = App.PhysicalDevice.Name;

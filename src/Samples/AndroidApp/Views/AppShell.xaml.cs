@@ -1,6 +1,6 @@
-﻿using Tests.AndroidApp.ViewModels;
+﻿using AndroidApp.ViewModels;
 
-namespace Tests.AndroidApp.Views;
+namespace AndroidApp.Views;
 
 public partial class AppShell : Shell
 {

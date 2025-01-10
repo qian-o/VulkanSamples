@@ -1,10 +1,5 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.ImGui;
-using Graphics.Vulkan.Skia;
-using Graphics.Windowing;
-using Graphics.Windowing.Events;
+﻿using Common;
+using Core;
 using Hexa.NET.ImGui;
 using OxyPlot;
 using OxyPlot.Axes;
@@ -12,9 +7,14 @@ using OxyPlot.Legends;
 using OxyPlot.Series;
 using Silk.NET.Maths;
 using SkiaSharp;
-using Tests.Core;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.ImGui;
+using Vulkan.Skia;
+using Windowing;
+using Windowing.Events;
 
-namespace Tests.Skia;
+namespace Skia;
 
 internal sealed unsafe class Program
 {
@@ -31,7 +31,7 @@ internal sealed unsafe class Program
     {
         mainWindow = new()
         {
-            Title = "Tests.Skia",
+            Title = "Skia",
             MinimumSize = new(100, 100)
         };
 
@@ -115,7 +115,7 @@ internal sealed unsafe class Program
             view.Render(e);
         }
 
-        ImGui.Begin("Tests.Skia");
+        ImGui.Begin("Skia");
         {
             ImGui.Text($"FPS: {1.0f / e.DeltaTime}");
 
@@ -223,9 +223,9 @@ internal sealed unsafe class Program
 
         for (int i = 0; i < 2500; i++)
         {
-            ScatterPoint point = new(((random.NextDouble() * 2.2) - 1) * 200, (random.NextDouble() * 400) - 200)
+            ScatterPoint point = new((random.NextDouble() * 2.2 - 1) * 200, random.NextDouble() * 400 - 200)
             {
-                Value = (random.NextDouble() * 200) - 100
+                Value = random.NextDouble() * 200 - 100
             };
 
             scatterSeries.Points.Add(point);

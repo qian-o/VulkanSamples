@@ -5,7 +5,7 @@
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ApplicationId>com.renderer.tests.androidapp</ApplicationId>
-		<ApplicationTitle>Tests.AndroidApp</ApplicationTitle>
+		<ApplicationTitle>AndroidApp</ApplicationTitle>
 		<ApplicationVersion>1</ApplicationVersion>
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 
@@ -19,11 +19,10 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" />
-		<PackageReference Include="System.Text.Json" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+		<ProjectReference Include="..\Common\Common.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -41,7 +40,7 @@
 
 	<ItemGroup>
 		<MauiAsset Include="Assets\**" LogicalName="Assets\%(RecursiveDir)%(Filename)%(Extension)" />
-		<MauiAsset Include="..\Tests.Core\Assets\**" LogicalName="Assets\%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiAsset Include="..\Common\Assets\**" LogicalName="Assets\%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
 	<ItemGroup>

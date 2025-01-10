@@ -2,23 +2,23 @@
 using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Windows;
-using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
-using Graphics.Windowing.Events;
+using Common.Helpers;
+using Core;
 using SharpGLTF.Materials;
 using SharpGLTF.Schema2;
 using SharpGLTF.Validation;
 using StbImageSharp;
-using Tests.Core.Helpers;
+using Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
+using Windowing.Events;
 using AlphaMode = SharpGLTF.Schema2.AlphaMode;
 using GLTFTexture = SharpGLTF.Schema2.Texture;
-using Pipeline = Graphics.Vulkan.Pipeline;
-using Texture = Graphics.Vulkan.Texture;
+using Pipeline = Vulkan.Pipeline;
+using Texture = Vulkan.Texture;
 using Window = System.Windows.Window;
 
-namespace Tests.WPF;
+namespace WPF;
 
 public unsafe partial class MainWindow : Window
 {

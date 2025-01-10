@@ -1,4 +1,4 @@
-﻿namespace Tests.Core.Helpers;
+﻿namespace Common.Helpers;
 
 public static class MathExtensions
 {

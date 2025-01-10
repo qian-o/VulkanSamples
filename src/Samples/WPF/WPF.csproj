@@ -7,13 +7,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Silk.NET.Direct3D11" />
-	  <PackageReference Include="Silk.NET.Direct3D9" />
-	  <PackageReference Include="Silk.NET.DXGI" />
+		<PackageReference Include="Silk.NET.Direct3D11" />
+		<PackageReference Include="Silk.NET.Direct3D9" />
+		<PackageReference Include="Silk.NET.DXGI" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Tests.Core\Tests.Core.csproj" />
+		<ProjectReference Include="..\Common\Common.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -23,11 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Assets\Shaders\GammaCorrectionEffect.ps" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Resource Include="Assets\Shaders\GammaCorrectionEffect.ps" />
+		<Resource Include="Assets\Shaders\GammaCorrectionEffect.ps" />
 	</ItemGroup>
 
 </Project>

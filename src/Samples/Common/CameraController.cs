@@ -1,8 +1,8 @@
 ﻿using System.Numerics;
+using Common.Helpers;
 using Hexa.NET.ImGui;
-using Tests.Core.Helpers;
 
-namespace Tests.Core;
+namespace Common;
 
 public class CameraController
 {

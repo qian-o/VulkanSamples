@@ -2,17 +2,17 @@
 using Android.Content;
 using Android.Runtime;
 using Android.Views;
-using Graphics.Core.Helpers;
+using AndroidApp.Controls;
+using AndroidApp.Platforms.Android.Helpers;
+using Core.Helpers;
 using Java.Interop;
 using Silk.NET.Core.Contexts;
 using Silk.NET.Core.Native;
 using Silk.NET.Vulkan;
 using Silk.NET.Vulkan.Extensions.KHR;
-using Tests.AndroidApp.Controls;
-using Tests.AndroidApp.Platforms.Android.Helpers;
 using Format = Android.Graphics.Format;
 
-namespace Tests.AndroidApp.Platforms.Android.Controls;
+namespace AndroidApp.Platforms.Android.Controls;
 
 internal sealed unsafe class VkSurface(ANativeWindow* window) : IVkSurface, IDisposable
 {

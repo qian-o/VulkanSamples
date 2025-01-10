@@ -1,7 +1,7 @@
-﻿using Graphics.Vulkan;
-using Tests.AndroidApp.Views;
+﻿using Vulkan;
+using AndroidApp.Views;
 
-namespace Tests.AndroidApp;
+namespace AndroidApp;
 
 public partial class App : Application
 {

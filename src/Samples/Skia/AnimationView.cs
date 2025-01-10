@@ -1,11 +1,11 @@
-﻿using Graphics.Vulkan;
-using Graphics.Vulkan.ImGui;
-using Graphics.Windowing.Events;
+﻿using Common;
 using SkiaSharp;
 using SkiaSharp.Skottie;
-using Tests.Core;
+using Vulkan;
+using Vulkan.ImGui;
+using Windowing.Events;
 
-namespace Tests.Skia;
+namespace Skia;
 
 internal sealed class AnimationView(string filePath,
                                     GraphicsDevice device,

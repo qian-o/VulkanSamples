@@ -1,10 +1,11 @@
-﻿using Graphics.Vulkan;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Windowing.Events;
+﻿using Vulkan;
+using Vulkan.Descriptions;
+using Windowing.Events;
 using Silk.NET.Core.Contexts;
 using Silk.NET.Maths;
+using AndroidApp;
 
-namespace Tests.AndroidApp.Controls;
+namespace AndroidApp.Controls;
 
 internal interface ISwapChainPanel
 {

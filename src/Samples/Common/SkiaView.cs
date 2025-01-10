@@ -1,14 +1,14 @@
 ﻿using System.Numerics;
-using Graphics.Core;
-using Graphics.Vulkan;
-using Graphics.Vulkan.ImGui;
-using Graphics.Vulkan.Skia;
-using Graphics.Windowing.Events;
+using Core;
 using Hexa.NET.ImGui;
 using Silk.NET.Maths;
 using SkiaSharp;
+using Vulkan;
+using Vulkan.ImGui;
+using Vulkan.Skia;
+using Windowing.Events;
 
-namespace Tests.Core;
+namespace Common;
 
 public abstract class SkiaView(string title,
                                GraphicsDevice device,

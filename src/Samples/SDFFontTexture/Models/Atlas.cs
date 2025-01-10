@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Tests.SDFFontTexture.Models;
+namespace SDFFontTexture.Models;
 
 internal sealed class Atlas
 {
