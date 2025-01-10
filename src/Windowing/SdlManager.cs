@@ -226,7 +226,7 @@ internal static unsafe class SdlManager
             _ => (int)button - 1,
         };
 
-        return (Sdl.GetGlobalMouseState(null, null) & 1 << mask) != 0;
+        return (Sdl.GetGlobalMouseState(null, null) & (1 << mask)) != 0;
     }
 
     public static void SetCursor(Cursor cursor)

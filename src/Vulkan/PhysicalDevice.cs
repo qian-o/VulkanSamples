@@ -119,7 +119,7 @@ public unsafe class PhysicalDevice : VulkanObject<VkPhysicalDevice>
     {
         for (uint i = 0; i < MemoryProperties.MemoryTypeCount; i++)
         {
-            if ((memoryTypeBits & 1 << (int)i) != 0 && (MemoryProperties.MemoryTypes[(int)i].PropertyFlags & memoryPropertyFlags) == memoryPropertyFlags)
+            if ((memoryTypeBits & (1 << (int)i)) != 0 && (MemoryProperties.MemoryTypes[(int)i].PropertyFlags & memoryPropertyFlags) == memoryPropertyFlags)
             {
                 return i;
             }

@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using Core;
 using Vulkan.Descriptions;
 
 namespace Vulkan.Helpers;

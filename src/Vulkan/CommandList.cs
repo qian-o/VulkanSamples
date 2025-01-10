@@ -1,7 +1,7 @@
-﻿using Core;
-using Vulkan.Descriptions;
+﻿using System.Runtime.CompilerServices;
+using Core;
 using Silk.NET.Vulkan;
-using System.Runtime.CompilerServices;
+using Vulkan.Descriptions;
 using Vulkan.Helpers;
 using Viewport = Core.Viewport;
 

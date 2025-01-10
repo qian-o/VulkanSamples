@@ -183,7 +183,7 @@ public unsafe class Texture : VulkanObject<VkImage>, IBindableResource
         {
             for (uint layer = baseArrayLayer; layer < baseArrayLayer + layerCount; layer++)
             {
-                uint index = layer * MipLevels + level;
+                uint index = (layer * MipLevels) + level;
 
                 ImageLayout oldLayout = ImageLayouts[index];
 

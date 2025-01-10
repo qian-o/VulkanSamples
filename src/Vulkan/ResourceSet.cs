@@ -168,7 +168,7 @@ public unsafe class ResourceSet : VulkanObject<ulong>
 
     private void Refresh()
     {
-        if (useResources!.Any(item => item is null) || Layout.IsLastBindless && bindlessResources is null)
+        if (useResources!.Any(item => item is null) || (Layout.IsLastBindless && bindlessResources is null))
         {
             return;
         }
