@@ -1,6 +1,6 @@
-﻿using Graphics.Vulkan.Helpers;
+﻿using Vulkan.Helpers;
 
-namespace Graphics.Vulkan.Descriptions;
+namespace Vulkan.Descriptions;
 
 public record struct VertexLayoutDescription
 {

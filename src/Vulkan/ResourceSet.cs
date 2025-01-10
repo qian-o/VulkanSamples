@@ -1,9 +1,9 @@
-﻿using Graphics.Core.Helpers;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+﻿using Core.Helpers;
 using Silk.NET.Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class ResourceSet : VulkanObject<ulong>
 {
@@ -168,7 +168,7 @@ public unsafe class ResourceSet : VulkanObject<ulong>
 
     private void Refresh()
     {
-        if (useResources!.Any(item => item is null) || (Layout.IsLastBindless && bindlessResources is null))
+        if (useResources!.Any(item => item is null) || Layout.IsLastBindless && bindlessResources is null)
         {
             return;
         }

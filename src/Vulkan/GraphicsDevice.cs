@@ -1,20 +1,20 @@
 ﻿using System.Runtime.CompilerServices;
-using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+using Core;
 using Silk.NET.Core.Native;
 using Silk.NET.Vulkan;
 using Silk.NET.Vulkan.Extensions.EXT;
 using Silk.NET.Vulkan.Extensions.KHR;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class GraphicsDevice : VulkanObject<VkDevice>
 {
     internal const uint MinStagingBufferSize = 1024 * 4;
     internal const uint MaxStagingBufferSize = 1024 * 1024 * 4;
 
-    private readonly object _stagingResourcesLock;
+    private readonly Lock _stagingResourcesLock;
     private readonly List<StagingCommandPool> _availableStagingCommandPools;
     private readonly List<DeviceBuffer> _availableStagingBuffers;
     private readonly List<Semaphore> _availableStagingSemaphores;
@@ -26,7 +26,7 @@ public unsafe class GraphicsDevice : VulkanObject<VkDevice>
                             uint computeQueueFamilyIndex,
                             uint transferQueueFamilyIndex) : base(vkRes, ObjectType.Device)
     {
-        _stagingResourcesLock = new object();
+        _stagingResourcesLock = new Lock();
         _availableStagingCommandPools = [];
         _availableStagingBuffers = [];
         _availableStagingSemaphores = [];

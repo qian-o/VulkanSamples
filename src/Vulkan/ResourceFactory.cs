@@ -1,7 +1,7 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
+﻿using Core;
+using Vulkan.Descriptions;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public class ResourceFactory
 {

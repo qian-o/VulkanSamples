@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace Graphics.Core;
+namespace Core;
 
 public record struct SpecializationConstant
 {

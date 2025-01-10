@@ -1,4 +1,4 @@
-﻿namespace Graphics.Core;
+﻿namespace Core;
 
 [Flags]
 public enum ElementOptions : byte

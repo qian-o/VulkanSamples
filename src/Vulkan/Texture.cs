@@ -1,9 +1,9 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
 using Silk.NET.Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class Texture : VulkanObject<VkImage>, IBindableResource
 {
@@ -183,7 +183,7 @@ public unsafe class Texture : VulkanObject<VkImage>, IBindableResource
         {
             for (uint layer = baseArrayLayer; layer < baseArrayLayer + layerCount; layer++)
             {
-                uint index = (layer * MipLevels) + level;
+                uint index = layer * MipLevels + level;
 
                 ImageLayout oldLayout = ImageLayouts[index];
 

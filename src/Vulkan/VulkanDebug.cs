@@ -1,12 +1,12 @@
 ﻿using System.Globalization;
 using System.Text;
-using Graphics.Core;
-using Graphics.Core.Helpers;
+using Core;
+using Core.Helpers;
 using Silk.NET.Core.Native;
 using Silk.NET.Vulkan;
 using Silk.NET.Vulkan.Extensions.EXT;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class VulkanDebug : DisposableObject
 {

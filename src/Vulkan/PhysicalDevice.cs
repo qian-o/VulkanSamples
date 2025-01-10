@@ -1,10 +1,10 @@
-﻿using Graphics.Core.Helpers;
+﻿using Core.Helpers;
 using Silk.NET.Core;
 using Silk.NET.Vulkan;
 using Silk.NET.Vulkan.Extensions.EXT;
 using Silk.NET.Vulkan.Extensions.KHR;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class PhysicalDevice : VulkanObject<VkPhysicalDevice>
 {
@@ -119,7 +119,7 @@ public unsafe class PhysicalDevice : VulkanObject<VkPhysicalDevice>
     {
         for (uint i = 0; i < MemoryProperties.MemoryTypeCount; i++)
         {
-            if ((memoryTypeBits & (1 << (int)i)) != 0 && (MemoryProperties.MemoryTypes[(int)i].PropertyFlags & memoryPropertyFlags) == memoryPropertyFlags)
+            if ((memoryTypeBits & 1 << (int)i) != 0 && (MemoryProperties.MemoryTypes[(int)i].PropertyFlags & memoryPropertyFlags) == memoryPropertyFlags)
             {
                 return i;
             }

@@ -1,4 +1,4 @@
-﻿namespace Graphics.Core;
+﻿namespace Core;
 
 public enum VertexElementFormat : byte
 {

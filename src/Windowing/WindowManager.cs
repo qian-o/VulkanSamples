@@ -1,9 +1,9 @@
-﻿using Graphics.Windowing.Enums;
-using Graphics.Windowing.Interfaces;
-using Graphics.Windowing.Structs;
-using Silk.NET.Maths;
+﻿using Silk.NET.Maths;
+using Windowing.Enums;
+using Windowing.Interfaces;
+using Windowing.Structs;
 
-namespace Graphics.Windowing;
+namespace Windowing;
 
 public static class WindowManager
 {

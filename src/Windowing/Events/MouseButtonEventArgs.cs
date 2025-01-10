@@ -1,7 +1,7 @@
-﻿using Graphics.Windowing.Enums;
-using Silk.NET.Maths;
+﻿using Silk.NET.Maths;
+using Windowing.Enums;
 
-namespace Graphics.Windowing.Events;
+namespace Windowing.Events;
 
 public class MouseButtonEventArgs(MouseButton button, Vector2D<int> position) : EventArgs
 {

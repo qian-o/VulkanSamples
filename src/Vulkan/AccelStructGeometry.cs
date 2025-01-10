@@ -1,6 +1,6 @@
-﻿using Graphics.Core;
+﻿using Core;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public abstract class AccelStructGeometry
 {

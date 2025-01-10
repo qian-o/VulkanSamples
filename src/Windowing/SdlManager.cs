@@ -1,11 +1,11 @@
-﻿using Graphics.Windowing.Enums;
-using Graphics.Windowing.Structs;
-using Silk.NET.Maths;
+﻿using Silk.NET.Maths;
 using Silk.NET.SDL;
-using Cursor = Graphics.Windowing.Enums.Cursor;
+using Windowing.Enums;
+using Windowing.Structs;
+using Cursor = Windowing.Enums.Cursor;
 using SdlCursor = Silk.NET.SDL.Cursor;
 
-namespace Graphics.Windowing;
+namespace Windowing;
 
 internal static unsafe class SdlManager
 {
@@ -226,7 +226,7 @@ internal static unsafe class SdlManager
             _ => (int)button - 1,
         };
 
-        return (Sdl.GetGlobalMouseState(null, null) & (1 << mask)) != 0;
+        return (Sdl.GetGlobalMouseState(null, null) & 1 << mask) != 0;
     }
 
     public static void SetCursor(Cursor cursor)

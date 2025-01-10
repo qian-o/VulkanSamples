@@ -1,6 +1,6 @@
 ﻿using Silk.NET.Maths;
 
-namespace Graphics.Windowing.Structs;
+namespace Windowing.Structs;
 
 public struct Display(int index,
                       string name,

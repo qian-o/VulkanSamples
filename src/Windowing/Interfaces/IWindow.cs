@@ -1,9 +1,9 @@
-﻿using Graphics.Windowing.Enums;
-using Graphics.Windowing.Events;
-using Silk.NET.Core.Contexts;
+﻿using Silk.NET.Core.Contexts;
 using Silk.NET.Maths;
+using Windowing.Enums;
+using Windowing.Events;
 
-namespace Graphics.Windowing.Interfaces;
+namespace Windowing.Interfaces;
 
 public interface IWindow
 {

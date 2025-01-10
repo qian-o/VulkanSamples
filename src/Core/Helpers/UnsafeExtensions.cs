@@ -1,4 +1,4 @@
-﻿namespace Graphics.Core.Helpers;
+﻿namespace Core.Helpers;
 
 public static unsafe class UnsafeExtensions
 {

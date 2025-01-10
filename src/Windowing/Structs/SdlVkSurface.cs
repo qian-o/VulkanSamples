@@ -3,7 +3,7 @@ using Silk.NET.Core.Contexts;
 using Silk.NET.Core.Native;
 using Silk.NET.SDL;
 
-namespace Graphics.Windowing.Structs;
+namespace Windowing.Structs;
 
 public unsafe struct SdlVkSurface(Window* window) : IVkSurface, IDisposable
 {

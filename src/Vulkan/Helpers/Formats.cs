@@ -1,10 +1,10 @@
-﻿using Graphics.Core;
+﻿using Core;
 using Silk.NET.Vulkan;
-using BlendFactor = Graphics.Core.BlendFactor;
-using FrontFace = Graphics.Core.FrontFace;
-using PrimitiveTopology = Graphics.Core.PrimitiveTopology;
+using BlendFactor = Core.BlendFactor;
+using FrontFace = Core.FrontFace;
+using PrimitiveTopology = Core.PrimitiveTopology;
 
-namespace Graphics.Vulkan.Helpers;
+namespace Vulkan.Helpers;
 
 internal static class Formats
 {

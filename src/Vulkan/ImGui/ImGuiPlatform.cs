@@ -1,12 +1,12 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Windowing.Enums;
-using Graphics.Windowing.Events;
-using Graphics.Windowing.Interfaces;
+﻿using Core;
+using Windowing.Enums;
+using Windowing.Events;
+using Windowing.Interfaces;
 using Hexa.NET.ImGui;
 using Silk.NET.Maths;
+using Vulkan.Descriptions;
 
-namespace Graphics.Vulkan.ImGui;
+namespace Vulkan.ImGui;
 
 public unsafe class ImGuiPlatform : DisposableObject
 {

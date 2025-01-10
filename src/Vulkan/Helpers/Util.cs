@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
 using Silk.NET.Vulkan;
 
-namespace Graphics.Vulkan.Helpers;
+namespace Vulkan.Helpers;
 
 internal static unsafe class Util
 {
@@ -29,12 +29,12 @@ internal static unsafe class Util
 
     public static T AlignedSize<T>(T size, T alignment) where T : INumberBase<T>, IBitwiseOperators<T, T, T>
     {
-        return (size + alignment - T.One) & ~(alignment - T.One);
+        return size + alignment - T.One & ~(alignment - T.One);
     }
 
     public static T Lerp<T>(T start, T end, T value) where T : INumberBase<T>
     {
-        return start + ((end - start) * value);
+        return start + (end - start) * value;
     }
 
     public static TransformMatrixKHR GetTransformMatrix(Matrix4x4 transform)

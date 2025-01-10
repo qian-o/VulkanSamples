@@ -1,10 +1,10 @@
-﻿using Graphics.Core;
-using Graphics.Core.Helpers;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
+using Core.Helpers;
 using Silk.NET.Vulkan;
 using SkiaSharp;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan.Skia;
+namespace Vulkan.Skia;
 
 public static unsafe class SkiaGraphics
 {

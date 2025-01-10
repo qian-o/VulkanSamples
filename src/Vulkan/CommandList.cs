@@ -1,11 +1,11 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
+using Vulkan.Descriptions;
 using Silk.NET.Vulkan;
 using System.Runtime.CompilerServices;
-using Viewport = Graphics.Core.Viewport;
+using Vulkan.Helpers;
+using Viewport = Core.Viewport;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class CommandList : VulkanObject<CommandBuffer>
 {

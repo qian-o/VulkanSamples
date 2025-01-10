@@ -1,6 +1,6 @@
-﻿using Graphics.Core;
+﻿using Core;
 
-namespace Graphics.Vulkan.Descriptions;
+namespace Vulkan.Descriptions;
 
 public record struct SamplerDescription
 {

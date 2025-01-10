@@ -1,6 +1,6 @@
-﻿using Graphics.Core;
+﻿using Core;
 
-namespace Graphics.Vulkan.Helpers;
+namespace Vulkan.Helpers;
 
 internal static class FormatHelpers
 {

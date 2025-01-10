@@ -1,6 +1,6 @@
 ﻿using Hexa.NET.ImGui;
 
-namespace Graphics.Vulkan.ImGui;
+namespace Vulkan.ImGui;
 
 public record struct ImGuiFontConfig
 {

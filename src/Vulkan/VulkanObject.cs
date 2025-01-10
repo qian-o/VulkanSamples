@@ -1,8 +1,8 @@
-﻿using Graphics.Core;
-using Graphics.Core.Helpers;
+﻿using Core;
+using Core.Helpers;
 using Silk.NET.Vulkan;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public abstract unsafe class VulkanObject<THandle>(VulkanResources vkRes, params ObjectType[] objectTypes) : DisposableObject
 {

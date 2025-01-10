@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
-using Graphics.Windowing.Enums;
-using Graphics.Windowing.Events;
-using Graphics.Windowing.Interfaces;
 using Silk.NET.Core.Contexts;
 using Silk.NET.Maths;
+using Windowing.Enums;
+using Windowing.Events;
+using Windowing.Interfaces;
 
-namespace Graphics.Windowing;
+namespace Windowing;
 
 public abstract class WindowImplementationBase : IWindow
 {

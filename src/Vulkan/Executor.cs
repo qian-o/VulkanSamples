@@ -1,6 +1,6 @@
 ﻿using Silk.NET.Vulkan;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class Executor : VulkanObject<VkQueue>
 {

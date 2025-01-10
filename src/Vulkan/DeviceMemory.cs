@@ -1,7 +1,7 @@
-﻿using Graphics.Vulkan.Helpers;
-using Silk.NET.Vulkan;
+﻿using Silk.NET.Vulkan;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class DeviceMemory : VulkanObject<VkDeviceMemory>
 {

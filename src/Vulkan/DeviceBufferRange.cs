@@ -1,4 +1,4 @@
-﻿namespace Graphics.Vulkan;
+﻿namespace Vulkan;
 
 public record struct DeviceBufferRange : IBindableResource
 {

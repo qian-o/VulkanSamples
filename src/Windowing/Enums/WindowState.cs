@@ -1,4 +1,4 @@
-﻿namespace Graphics.Windowing.Enums;
+﻿namespace Windowing.Enums;
 
 public enum WindowState
 {

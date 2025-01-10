@@ -1,10 +1,10 @@
-﻿using Graphics.Core;
-using Graphics.Core.Helpers;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
+using Core.Helpers;
 using Silk.NET.Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class Swapchain : VulkanObject<SwapchainKHR>
 {

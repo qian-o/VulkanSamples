@@ -1,19 +1,19 @@
 ﻿using System.Numerics;
 using System.Runtime.InteropServices;
-using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Windowing;
-using Graphics.Windowing.Enums;
-using Graphics.Windowing.Interfaces;
-using Graphics.Windowing.Structs;
+using Core;
 using Hexa.NET.ImGui;
 using Hexa.NET.ImGuizmo;
 using Hexa.NET.ImNodes;
 using Hexa.NET.ImPlot;
 using Silk.NET.Maths;
-using Cursor = Graphics.Windowing.Enums.Cursor;
+using Vulkan.Descriptions;
+using Windowing;
+using Windowing.Enums;
+using Windowing.Interfaces;
+using Windowing.Structs;
+using Cursor = Windowing.Enums.Cursor;
 
-namespace Graphics.Vulkan.ImGui;
+namespace Vulkan.ImGui;
 
 public unsafe class ImGuiController : DisposableObject
 {

@@ -1,11 +1,11 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
 using Silk.NET.Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
-public unsafe class TextureView : VulkanObject<ImageView>, IBindableResource
+public unsafe class TextureView : VulkanObject<VkImageView>, IBindableResource
 {
     internal TextureView(VulkanResources vkRes, ref readonly TextureViewDescription description) : base(vkRes, ObjectType.ImageView)
     {

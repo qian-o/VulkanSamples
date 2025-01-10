@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Graphics.Core.Helpers;
+namespace Core.Helpers;
 
 public static class CSharpExtensions
 {

@@ -1,13 +1,13 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Graphics.Core.Helpers;
+namespace Core.Helpers;
 
 /// <summary>
 /// Provides a persistent memory allocator.
 /// </summary>
 public unsafe class Allocator : DisposableObject
 {
-    private readonly object _locker = new();
+    private readonly Lock _locker = new();
     private readonly List<nint> _marshal = [];
     private readonly List<nint> _nativeMemory = [];
 

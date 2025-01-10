@@ -1,4 +1,4 @@
-﻿namespace Graphics.Vulkan;
+﻿namespace Vulkan;
 
 internal sealed class KhrRayQuery
 {

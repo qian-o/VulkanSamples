@@ -1,4 +1,4 @@
-﻿namespace Graphics.Windowing.Events;
+﻿namespace Windowing.Events;
 
 public class TimeEventArgs(double deltaTime, double totalTime) : EventArgs
 {

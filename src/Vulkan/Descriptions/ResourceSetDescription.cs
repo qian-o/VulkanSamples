@@ -1,4 +1,4 @@
-﻿namespace Graphics.Vulkan.Descriptions;
+﻿namespace Vulkan.Descriptions;
 
 public record struct ResourceSetDescription
 {

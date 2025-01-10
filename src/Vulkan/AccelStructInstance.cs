@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
-using Graphics.Core;
+using Core;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 /// <summary>
 /// This data structure is used in GPU memory during acceleration structure build.

@@ -1,13 +1,13 @@
 ﻿using System.Text;
-using Graphics.Core.Helpers;
-using Graphics.Windowing.Enums;
-using Graphics.Windowing.Events;
-using Graphics.Windowing.Structs;
+using Core.Helpers;
 using Silk.NET.Core.Contexts;
 using Silk.NET.Maths;
 using Silk.NET.SDL;
+using Windowing.Enums;
+using Windowing.Events;
+using Windowing.Structs;
 
-namespace Graphics.Windowing;
+namespace Windowing;
 
 public unsafe class SdlWindow : WindowImplementationBase
 {

@@ -1,7 +1,7 @@
-﻿using Graphics.Core;
+﻿using Core;
 using Silk.NET.Core.Contexts;
 
-namespace Graphics.Vulkan.Descriptions;
+namespace Vulkan.Descriptions;
 
 public record struct SwapchainDescription
 {

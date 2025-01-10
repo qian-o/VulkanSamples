@@ -1,9 +1,9 @@
-﻿using Graphics.Core;
+﻿using Core;
 using Silk.NET.Vulkan;
 using Silk.NET.Vulkan.Extensions.EXT;
 using Silk.NET.Vulkan.Extensions.KHR;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public class VulkanResources : DisposableObject
 {

@@ -1,9 +1,9 @@
-﻿using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
 using Silk.NET.Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class DeviceBuffer : VulkanObject<VkBuffer>, IBindableResource
 {

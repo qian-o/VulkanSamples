@@ -1,12 +1,12 @@
 ﻿using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Text;
-using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+using Core;
 using Hexa.NET.ImGui;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan.ImGui;
+namespace Vulkan.ImGui;
 
 public unsafe class ImGuiRenderer : DisposableObject
 {
@@ -67,7 +67,7 @@ float4 mainPS(VSOutput input) : SV_TARGET
     private readonly OutputDescription _outputDescription;
 
     #region Resource Management
-    private readonly object _lock = new();
+    private readonly Lock _lock = new();
     private readonly Dictionary<TextureView, ulong> _mapped = [];
     private readonly Dictionary<Texture, ulong> _mappedTextures = [];
     private readonly Dictionary<ulong, ResourceSet> _selfSets = [];

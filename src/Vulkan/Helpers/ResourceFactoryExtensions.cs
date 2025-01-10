@@ -1,8 +1,8 @@
 ﻿using System.Text;
-using Graphics.Core;
-using Graphics.Vulkan.Descriptions;
+using Core;
+using Vulkan.Descriptions;
 
-namespace Graphics.Vulkan.Helpers;
+namespace Vulkan.Helpers;
 
 public static class ResourceFactoryExtensions
 {

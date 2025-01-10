@@ -1,13 +1,13 @@
-﻿using Graphics.Core;
-using Graphics.Core.Helpers;
-using Graphics.Vulkan.Helpers;
+﻿using Core;
+using Core.Helpers;
 using Silk.NET.Core;
 using Silk.NET.Core.Native;
 using Silk.NET.Vulkan;
 using Silk.NET.Vulkan.Extensions.EXT;
 using Silk.NET.Vulkan.Extensions.KHR;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class Context : DisposableObject
 {

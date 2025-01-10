@@ -1,11 +1,11 @@
 ﻿using System.Runtime.CompilerServices;
-using Graphics.Core;
-using Graphics.Core.Helpers;
-using Graphics.Vulkan.Descriptions;
-using Graphics.Vulkan.Helpers;
+using Core;
+using Core.Helpers;
 using Silk.NET.Vulkan;
+using Vulkan.Descriptions;
+using Vulkan.Helpers;
 
-namespace Graphics.Vulkan;
+namespace Vulkan;
 
 public unsafe class Pipeline : VulkanObject<VkPipeline>
 {
@@ -276,7 +276,7 @@ public unsafe class Pipeline : VulkanObject<VkPipeline>
 
             uint descriptorSetLayoutCount = (uint)description.ResourceLayouts.Length;
 
-            DescriptorSetLayout[] descriptorSetLayouts = new DescriptorSetLayout[descriptorSetLayoutCount];
+            VkDescriptorSetLayout[] descriptorSetLayouts = new VkDescriptorSetLayout[descriptorSetLayoutCount];
 
             for (uint i = 0; i < descriptorSetLayoutCount; i++)
             {
@@ -286,7 +286,7 @@ public unsafe class Pipeline : VulkanObject<VkPipeline>
             layoutCreateInfo.SetLayoutCount = descriptorSetLayoutCount;
             layoutCreateInfo.PSetLayouts = descriptorSetLayouts.AsPointer();
 
-            PipelineLayout pipelineLayout;
+            VkPipelineLayout pipelineLayout;
             VkRes.Vk.CreatePipelineLayout(VkRes.VkDevice, &layoutCreateInfo, null, &pipelineLayout).ThrowCode();
             createInfo.Layout = pipelineLayout;
         }
@@ -467,7 +467,7 @@ public unsafe class Pipeline : VulkanObject<VkPipeline>
 
             uint descriptorSetLayoutCount = (uint)description.ResourceLayouts.Length;
 
-            DescriptorSetLayout[] descriptorSetLayouts = new DescriptorSetLayout[descriptorSetLayoutCount];
+            VkDescriptorSetLayout[] descriptorSetLayouts = new VkDescriptorSetLayout[descriptorSetLayoutCount];
 
             for (uint i = 0; i < descriptorSetLayoutCount; i++)
             {
@@ -477,7 +477,7 @@ public unsafe class Pipeline : VulkanObject<VkPipeline>
             layoutCreateInfo.SetLayoutCount = descriptorSetLayoutCount;
             layoutCreateInfo.PSetLayouts = descriptorSetLayouts.AsPointer();
 
-            PipelineLayout pipelineLayout;
+            VkPipelineLayout pipelineLayout;
             VkRes.Vk.CreatePipelineLayout(VkRes.VkDevice, &layoutCreateInfo, null, &pipelineLayout).ThrowCode();
             createInfo.Layout = pipelineLayout;
         }
@@ -597,7 +597,7 @@ public unsafe class Pipeline : VulkanObject<VkPipeline>
 
             uint descriptorSetLayoutCount = (uint)description.ResourceLayouts.Length;
 
-            DescriptorSetLayout[] descriptorSetLayouts = new DescriptorSetLayout[descriptorSetLayoutCount];
+            VkDescriptorSetLayout[] descriptorSetLayouts = new VkDescriptorSetLayout[descriptorSetLayoutCount];
 
             for (uint i = 0; i < descriptorSetLayoutCount; i++)
             {
@@ -607,7 +607,7 @@ public unsafe class Pipeline : VulkanObject<VkPipeline>
             layoutCreateInfo.SetLayoutCount = descriptorSetLayoutCount;
             layoutCreateInfo.PSetLayouts = descriptorSetLayouts.AsPointer();
 
-            PipelineLayout pipelineLayout;
+            VkPipelineLayout pipelineLayout;
             VkRes.Vk.CreatePipelineLayout(VkRes.VkDevice, &layoutCreateInfo, null, &pipelineLayout).ThrowCode();
             createInfo.Layout = pipelineLayout;
         }

@@ -3,8 +3,8 @@
 		<PackageReference Include="Silk.NET.SDL" />
 		<PackageReference Include="System.Text.Json" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
-		<ProjectReference Include="..\Graphics.Core\Graphics.Core.csproj" />
+	  <ProjectReference Include="..\Core\Core.csproj" />
 	</ItemGroup>
 </Project>
