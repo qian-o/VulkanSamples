@@ -1,41 +1,41 @@
 <Project>
-	
-	<PropertyGroup>
-		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-	</PropertyGroup>
-	
-	<ItemGroup>
-		<PackageVersion Include="CommunityToolkit.Maui" Version="9.1.1" />
-		<PackageVersion Include="CommunityToolkit.Mvvm" Version="8.3.2" />
-		<PackageVersion Include="Hexa.NET.ImGui" Version="2.2.1" />
-		<PackageVersion Include="Hexa.NET.ImGuizmo" Version="2.2.1" />
-		<PackageVersion Include="Hexa.NET.ImNodes" Version="2.2.1" />
-		<PackageVersion Include="Hexa.NET.ImPlot" Version="2.2.1" />
-		<PackageVersion Include="Microsoft.Maui.Controls" Version="9.0.0" />
-		<PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.0" />
-		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
-		<PackageVersion Include="OxyPlot.SkiaSharp" Version="2.2.0" />
-		<PackageVersion Include="SharpGLTF.Core" Version="1.0.3" />
-		<PackageVersion Include="SharpGLTF.Toolkit" Version="1.0.3" />
-		<PackageVersion Include="Silk.NET.Direct3D.Compilers" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.Direct3D11" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.Direct3D9" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.DXGI" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.Maths" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.SDL" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.SPIRV.Reflect" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.Vulkan" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.Vulkan.Extensions.EXT" Version="2.22.0" />
-		<PackageVersion Include="Silk.NET.Vulkan.Extensions.KHR" Version="2.22.0" />
-		<PackageVersion Include="SkiaSharp" Version="2.88.9" />
-		<PackageVersion Include="SkiaSharp.NativeAssets.Linux" Version="2.88.9" />
-		<PackageVersion Include="SkiaSharp.NativeAssets.macOS" Version="2.88.9" />
-		<PackageVersion Include="SkiaSharp.NativeAssets.Win32" Version="2.88.9" />
-		<PackageVersion Include="SkiaSharp.Skottie" Version="2.88.9" />
-		<PackageVersion Include="SkiaSharp.Views.Maui.Controls" Version="2.88.9" />
-		<PackageVersion Include="StbImageSharp" Version="2.30.15" />
-		<PackageVersion Include="System.Text.Json" Version="9.0.0" />
-		<PackageVersion Include="Vortice.Dxc" Version="3.6.2" />
-	</ItemGroup>
-	
+    
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageVersion Include="CommunityToolkit.Maui" Version="11.1.0" />
+        <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+        <PackageVersion Include="Hexa.NET.ImGui" Version="2.2.6" />
+        <PackageVersion Include="Hexa.NET.ImGuizmo" Version="2.2.6" />
+        <PackageVersion Include="Hexa.NET.ImNodes" Version="2.2.6" />
+        <PackageVersion Include="Hexa.NET.ImPlot" Version="2.2.6" />
+        <PackageVersion Include="Microsoft.Maui.Controls" Version="9.0.50" />
+        <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.50" />
+        <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.3" />
+        <PackageVersion Include="OxyPlot.SkiaSharp" Version="2.2.0" />
+        <PackageVersion Include="SharpGLTF.Core" Version="1.0.3" />
+        <PackageVersion Include="SharpGLTF.Toolkit" Version="1.0.3" />
+        <PackageVersion Include="Silk.NET.Direct3D.Compilers" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.Direct3D11" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.Direct3D9" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.DXGI" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.Maths" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.SDL" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.SPIRV.Reflect" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.Vulkan" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.Vulkan.Extensions.EXT" Version="2.22.0" />
+        <PackageVersion Include="Silk.NET.Vulkan.Extensions.KHR" Version="2.22.0" />
+        <PackageVersion Include="SkiaSharp" Version="3.116.1" />
+        <PackageVersion Include="SkiaSharp.NativeAssets.Linux" Version="3.116.1" />
+        <PackageVersion Include="SkiaSharp.NativeAssets.macOS" Version="3.116.1" />
+        <PackageVersion Include="SkiaSharp.NativeAssets.Win32" Version="3.116.1" />
+        <PackageVersion Include="SkiaSharp.Skottie" Version="3.116.1" />
+        <PackageVersion Include="SkiaSharp.Views.Maui.Controls" Version="3.116.1" />
+        <PackageVersion Include="StbImageSharp" Version="2.30.15" />
+        <PackageVersion Include="System.Text.Json" Version="9.0.3" />
+        <PackageVersion Include="Vortice.Dxc" Version="3.6.2" />
+    </ItemGroup>
+
 </Project>

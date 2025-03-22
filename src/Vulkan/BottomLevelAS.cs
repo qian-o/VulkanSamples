@@ -124,6 +124,7 @@ public unsafe class BottomLevelAS : VulkanObject<AccelerationStructureKHR>, IBin
         {
             SType = StructureType.AccelerationStructureBuildGeometryInfoKhr,
             Type = AccelerationStructureTypeKHR.BottomLevelKhr,
+            Mode = BuildAccelerationStructureModeKHR.BuildKhr,
             GeometryCount = (uint)geometries.Length,
             PGeometries = geometries.AsPointer(),
             Flags = BuildAccelerationStructureFlagsKHR.PreferFastTraceBitKhr
@@ -169,7 +170,6 @@ public unsafe class BottomLevelAS : VulkanObject<AccelerationStructureKHR>, IBin
                                                (uint)buildSizesInfo.BuildScratchSize,
                                                false);
 
-        buildGeometryInfo.Mode = BuildAccelerationStructureModeKHR.BuildKhr;
         buildGeometryInfo.DstAccelerationStructure = blas;
         buildGeometryInfo.ScratchData = new DeviceOrHostAddressKHR
         {
